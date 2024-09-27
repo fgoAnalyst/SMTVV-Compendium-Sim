@@ -1,0 +1,94 @@
+/* General Layout */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+/* Scrollable Demon List */
+#demon-list {
+    max-height: 500px;  /* Adjust the height for scrolling */
+    overflow-y: auto;
+    width: 20%;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+/* Two-column layout for content */
+.content {
+    display: flex;
+    width: 80%;
+}
+
+#demon-details-container, #ingredient-details-container {
+    width: 50%;
+    padding: 10px;
+}
+
+/* Collapsible Inventory */
+#inventory-container {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#inventory {
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+#inventory.hidden {
+    display: none;
+}
+
+/* Toggle Button for Inventory */
+#toggle-inventory {
+    margin-bottom: 10px;
+}
+
+/* Clickable ingredients 
+    color: blue;
+*/
+.ingredient {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.ingredient:hover {
+    color: darkblue;
+}
+
+/* Additional Spacing */
+#recipe-list, #ingredient-recipe-list {
+    margin-top: 10px;
+}
+
+/* Darker shades for demon list */
+.demon.special-fusion {
+    color: darkred;
+}
+
+.demon.fusion {
+    color: orange;
+}
+
+.demon.default {
+    color: darkgreen;
+}
+
+/* Existing color codes for recipes */
+.recipe.missing {
+    color: red;
+}
+
+.recipe.has-some {
+    color: darkgoldenrod;
+}
+
+.recipe.has-all {
+    color: green;
+}
